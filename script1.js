@@ -205,7 +205,7 @@ let time = setInterval(function autoclick(){
 let fpsInterval = 1000;
 const updateTimeInterval = () => {
     clearInterval(time)
-    fpsInterval = fpsInterval / 1.8
+    fpsInterval = fpsInterval / 2.0
     time = setInterval(function autoclick(){
         score = score + cps
         starting_score.innerHTML = score
