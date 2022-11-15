@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    background-image: url(./images/fond_dofus_clicker.png);
+    background-size: cover;
+    color: white;
+}
+
+#main>div{
+    width: 33.3%;
+}
+
+.flex{
+    display: flex;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+img{
+    object-fit: contain;
+}
+
+/*===LEFT===*/
+
+.logo{
+    margin-top: 10%;
+    text-align: center;
+}
+
+.left h2{
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: 250px;
+    text-align: center;
+}
+
+.left p{
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    background-color: RGBA(0,0,0,0.50);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 0px;
+}
+
+.score{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.left button{
+    background-color: red;
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 5px 40px;
+    cursor: pointer;
+
+}
+
+
+
+/*===CENTER===*/
+
+.center{
+    text-align: center;
+}
+
+.phrase{
+    background-color:RGBA(0,0,0,0.50) ;
+    border: 2px solid black;
+    border-radius: 7px;
+    width: 100%;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+.name{
+    width: 250px;
+    background-color: RGBA(0,0,0,0.50);
+    border: 2px solid black;
+    border-radius: 7px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: white;
+    padding: 10px 5px;
+}
+
+.center p{
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.personnage img{
+    height: 300px;
+    width: auto;
+}
+
+.monstre{
+    margin-top: 5%;
+    cursor: url(images/arme1.png), pointer;
+}
+
+.monstre img{
+    width: 200px;
+    height: auto;
+}
+
+.monstre img:active{
+    transform: scale(1.2);
+}
+
+p{
+    font-size: 14px;
+    font-weight: 300;
+
+}
+.info{
+    font-size: 12px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+
+    /*Animation translation phrase */
+@keyframes defilement-rtl {
+    0% {
+      transform: translate3d(100,0,0);      /* position initiale à droite */
+    }
+    100% {
+      transform: translate3d(-100%,0,0);  /* position finale à gauche */
+    }
+  }
+
+.texte{
+    font-size: 10px;
+    font-weight: lighter;
+    font-style: italic;
+    padding-left: 100%;
+    display: inline-block;
+    white-space: nowrap;               
+    animation-name: defilement-rtl;      
+    animation-duration: 10s;          
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+/*===RIGHT===*/
+
+.right h2{
+    float: right;
+    margin-bottom: 50px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 8%;
+}
+
+.right>div{
+    float: right;
+    cursor: pointer;
+}
+
+.boutton{
+    width: 250px;
+    background-color: RGBA(0,0,0,0.50);
+    margin-top: 20px;
+    border: 3px solid red;
+    border-radius: 10px;
+
+}
+
+.right img{
+    width: 65px;
+    height: 65px;
+    margin: 10px;
+}
+
+.arme{
+    text-align: center;
+}
+.cout{
+    margin-left: 20px;
+}
+
+.cout p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
