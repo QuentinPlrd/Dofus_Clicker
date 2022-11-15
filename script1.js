@@ -220,6 +220,7 @@ function reset() {
     degat.innerHTML = degat_actuel
     cps = 0
     prix = 10
+    fpsInterval = 1000
     let prix_autoclicker = document.getElementById("cout_autoclick")
     prix_autoclicker.innerHTML = prix
     lvl.innerHTML = "1"
