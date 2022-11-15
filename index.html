@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dofus Clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <script src="script1.js" defer ></script>
+    
+</head>
+<body>
+    <div id="main" class="flex container">
+
+        <!--LEFT SIDE-->
+
+        <div class="left">
+            <div class="logo">
+                <img src="images/logo_dofus.png" alt="logo">
+            </div>
+            <h2>Expérience :</h2>
+            <div class="score">
+                <p class="nombre_score">0</p>
+            </div>
+            <div class="flex">
+                <button class="reset" onclick="reset()">Reset</button>
+                <button id="button_autoclicker" onclick="autoclick()">Auto-click <br> cout : <span id="cout_autoclick">10</span></button>
+            </div>
+        </div>
+
+        <!--CENTER-->
+
+        <div class="center">
+            <div class="phrase">
+                <p class ="texte"></p>
+            </div>
+            <div class="name">
+                
+            </div>
+            <p class="niveau">Lvl <span id="level">1</span></p>
+            <div class="personnage">
+                <img src="images/iop_1.png" alt="iop" class="perso">
+            </div>
+            <div info2></div>
+            <div class="monstre">
+                <img src="images/tofu.jpeg" alt="monstre" class="monster" onclick="firstdegat() ,changeimage()">
+            </div>
+            <p><span class="info">Clique sur le monstre gagner de l'expérience et gagner en niveau</span></p>
+        </div>
+
+
+        <!--RIGHT SIDE-->
+
+        <div class="right">
+            
+                <h2>Dégats actuels : <br> <span class="degat_de_base">1</span></h2>
+
+                <div class=" flex boutton bonus1" id="bonusdegat1" onclick="degat1()">
+                    <div class="arme">
+                        <img src="images/arme1.png" alt="armelvl1">
+                    </div>
+                    <div class="cout">
+                        <p>Cout : 100</p>
+                        <p>Dégats : + 1</p>
+                    </div>
+                </div>
+
+                <div class="flex boutton bonus2" id="bonusdegat2">
+                    <img src="images/arme2.png" alt="armelvl2">
+                    <div class="cout">
+                        <p>Cout : 500</p>
+                        <p>Dégats : + 5</p>
+                    </div>
+                </div>
+
+                <div class="flex boutton bonus3" id="bonusdegat3">
+                    <img src="images/arme3.png" alt="armelvl3">
+                    <div class="cout">
+                        <p>Cout : 1 000</p>
+                        <p>Dégats : + 10</p>
+                    </div>
+                </div>
+
+                <div class="flex boutton bonus4" id="bonusdegat4">
+                    <img src="images/arme5.png" alt="armelvl4">
+                    <div class="cout">
+                        <p>Cout : 50 000</p>
+                        <p>Dégats : + 500</p>
+                    </div>
+                </div>
+
+                <div class="flex boutton bonus5" id="bonusdegat5">
+                    <img src="images/arme7.png" alt="armelvl5">
+                    <div class="cout">
+                        <p>Cout : 100 000 </p>
+                        <p>Dégats : + 1000</p>
+                    </div>
+                </div>  
+            </div>
+        </div> 
+
+</body>
+</html>
+
